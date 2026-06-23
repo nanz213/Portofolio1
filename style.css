@@ -302,16 +302,50 @@ footer {
     padding: 2rem 0;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+
     header .container {
-        flex-direction: column;
-        padding: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav.active {
+        display: block;
     }
 
     nav ul {
-        margin-top: 1rem;
-        gap: 1rem;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
     }
 
     .section {
@@ -328,54 +362,5 @@ footer {
 
     .project-card {
         margin-bottom: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
-
-    .section h2 {
-        font-size: 2rem;
-    }
-
-    .tagline {
-        font-size: 1.2rem;
-    }
-}
-
-/* Tampilan Laptop */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-/* Tampilan HP */
-@media screen and (max-width: 768px) {
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .profile-pic img {
-        width: 150px;
-        height: 150px;
-    }
-
-    h1, h2 {
-        font-size: 24px;
-    }
-
-    .container {
-        width: 95%;
     }
 }
