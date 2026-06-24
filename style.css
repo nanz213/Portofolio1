@@ -129,7 +129,7 @@ nav a.active::after {
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #666;
     margin-top: 1rem;
 }
@@ -397,4 +397,11 @@ footer {
 .experience-item p {
     line-height: 1.7;
     color: #555;
+}
+
+.detail-content img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
 }
