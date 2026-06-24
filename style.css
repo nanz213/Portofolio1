@@ -364,3 +364,37 @@ footer {
         margin-bottom: 2rem;
     }
 }
+
+/* Experience & Certifications */
+.experience-category {
+    margin-top: 40px;
+}
+
+.experience-category h3 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.experience-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.experience-item p {
+    line-height: 1.7;
+    color: #555;
+}
